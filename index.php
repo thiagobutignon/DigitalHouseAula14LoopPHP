@@ -25,6 +25,38 @@
         }
     ?>
 
+<h2>Exercício 4</h2>
+    <?php 
+    
+        $quantidadeDeCaras = 0;
+        while ($quantidadeDeCaras < 5) {
+            $moeda = rand(0,1);
+            if ($moeda == 1 ) {
+                $quantidadeDeCaras++;
+            }
+            $i++;
+        }
+        echo "<p>Joguei a moeda $i vezes!</p>";
+    ?>
+
+<h2>Exercício 5</h2>
+    <?php 
+        do {
+            $moeda = rand(0,1);
+            $i++;
+        } while ($moeda != 1);
+        echo "<p>Eu joguei a moeda $i vezes</p>";
+
+    ?>
+<h2>Exercício 6</h2>
+    <h3>Resolvido com For</h3>
+    <?php 
+      $nomes = ["Thiago", "Anita", "Bruno", "Pablo", "Caju"];
+
+      for ($i = 0; $i < count($nomes); $i++){
+        echo "<p>$nomes[$i]</p>";
+      }
+    ?>
 
     
 </body>
